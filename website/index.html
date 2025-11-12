@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IF Statements - Interactive Learning</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <h1>🎮 IF Statements Interactive Learning</h1>
+            <p class="subtitle">Learn Conditionals through Code & English!</p>
+        </div>
+    </header>
+
+    <!-- Navigation -->
+    <nav class="tab-navigation">
+        <button class="tab-button active" onclick="showTab('intro')">🏠 Introduction</button>
+        <button class="tab-button" onclick="showTab('game1')">🎯 Game 1: Real Life</button>
+        <button class="tab-button" onclick="showTab('game2')">💻 Game 2: Code It!</button>
+        <button class="tab-button" onclick="showTab('playground')">🔬 Playground</button>
+        <button class="tab-button" onclick="showTab('quiz')">📝 Quiz</button>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="container">
+
+        <!-- Tab 1: Introduction -->
+        <section id="intro" class="tab-content active">
+            <h2>Welcome! 👋</h2>
+            <div class="info-box">
+                <h3>What are IF Statements?</h3>
+                <p>IF statements help us make decisions - both in English and in code!</p>
+
+                <div class="example-box">
+                    <h4>🗣️ English Conditional:</h4>
+                    <p class="english-example">"If it rains, I take an umbrella."</p>
+
+                    <div class="arrow">⬇️</div>
+
+                    <h4>💻 Code Conditional:</h4>
+                    <pre><code>if it_rains:
+    take_umbrella()</code></pre>
+                </div>
+            </div>
+
+            <div class="info-box">
+                <h3>The IF Statement Structure</h3>
+                <div class="syntax-box">
+                    <pre><code><span class="keyword">if</span> <span class="condition">condition</span>:
+    <span class="action">do_something()</span></code></pre>
+                </div>
+                <ul>
+                    <li><strong>if</strong> - starts the statement</li>
+                    <li><strong>condition</strong> - what we check (True or False)</li>
+                    <li><strong>:</strong> - colon (don't forget!)</li>
+                    <li><strong>indentation</strong> - spaces before the action</li>
+                </ul>
+            </div>
+
+            <button class="btn-primary" onclick="showTab('game1')">Start Learning! 🚀</button>
+        </section>
+
+        <!-- Tab 2: Game 1 - Real Life Decisions -->
+        <section id="game1" class="tab-content">
+            <h2>🎯 Game 1: Real Life Decisions</h2>
+            <p>Connect English conditionals with everyday situations!</p>
+
+            <div class="game-container">
+                <div class="scenario-box">
+                    <h3 id="scenario-title">Scenario 1</h3>
+                    <p id="scenario-text" class="scenario-text"></p>
+
+                    <div class="condition-display">
+                        <h4>Condition:</h4>
+                        <p id="condition-text" class="condition-code"></p>
+                    </div>
+
+                    <div class="slider-container">
+                        <label id="slider-label"></label>
+                        <input type="range" id="value-slider" min="0" max="100" value="50">
+                        <span id="slider-value">50</span>
+                    </div>
+
+                    <button class="btn-check" onclick="checkScenario()">Check! ✓</button>
+
+                    <div id="result-box" class="result-box hidden">
+                        <p id="result-text"></p>
+                        <p id="explanation-text" class="explanation"></p>
+                    </div>
+
+                    <button class="btn-secondary" onclick="nextScenario()">Next Scenario →</button>
+                </div>
+
+                <div class="score-box">
+                    <h4>Your Score:</h4>
+                    <p class="score-display"><span id="game1-score">0</span> / <span id="game1-total">0</span></p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tab 3: Game 2 - Code It! -->
+        <section id="game2" class="tab-content">
+            <h2>💻 Game 2: Code It!</h2>
+            <p>Complete the IF statements by filling in the blanks!</p>
+
+            <div class="game-container">
+                <div class="code-challenge-box">
+                    <h3 id="challenge-title">Challenge 1</h3>
+                    <p id="challenge-description"></p>
+
+                    <div class="code-editor">
+                        <pre><code id="code-template"></code></pre>
+                        <div class="input-container" id="input-container">
+                            <!-- Dynamic inputs will be added here -->
+                        </div>
+                    </div>
+
+                    <button class="btn-check" onclick="checkCode()">Run Code! ▶️</button>
+
+                    <div id="code-output" class="output-box hidden">
+                        <h4>Output:</h4>
+                        <pre id="output-text"></pre>
+                        <p id="code-feedback" class="feedback"></p>
+                    </div>
+
+                    <button class="btn-secondary" onclick="nextChallenge()">Next Challenge →</button>
+                </div>
+
+                <div class="score-box">
+                    <h4>Your Score:</h4>
+                    <p class="score-display"><span id="game2-score">0</span> / <span id="game2-total">0</span></p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tab 4: Playground -->
+        <section id="playground" class="tab-content">
+            <h2>🔬 Code Playground</h2>
+            <p>Experiment with your own IF statements!</p>
+
+            <div class="playground-container">
+                <div class="editor-panel">
+                    <h3>Write Your Code:</h3>
+                    <textarea id="code-input" rows="10" placeholder="# Try writing your own if statement!
+# Example:
+age = 14
+if age >= 13:
+    print('You are a teenager!')"></textarea>
+                    <button class="btn-primary" onclick="runPlaygroundCode()">Run Code! ▶️</button>
+                </div>
+
+                <div class="output-panel">
+                    <h3>Output:</h3>
+                    <div id="playground-output" class="output-display">
+                        <p class="placeholder">Your output will appear here...</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="examples-box">
+                <h3>Try These Examples:</h3>
+                <button class="btn-example" onclick="loadExample(0)">Temperature Check</button>
+                <button class="btn-example" onclick="loadExample(1)">Age Verification</button>
+                <button class="btn-example" onclick="loadExample(2)">Score Check</button>
+                <button class="btn-example" onclick="loadExample(3)">Boolean Check</button>
+            </div>
+        </section>
+
+        <!-- Tab 5: Quiz -->
+        <section id="quiz" class="tab-content">
+            <h2>📝 Final Quiz</h2>
+            <p>Test your knowledge of IF statements!</p>
+
+            <div class="quiz-container">
+                <div id="quiz-question" class="quiz-box">
+                    <h3>Question <span id="question-number">1</span> of 5</h3>
+                    <p id="question-text" class="question"></p>
+
+                    <div id="answers-container" class="answers">
+                        <!-- Radio buttons will be generated here -->
+                    </div>
+
+                    <button class="btn-check" onclick="checkQuizAnswer()">Submit Answer</button>
+
+                    <div id="quiz-feedback" class="feedback-box hidden">
+                        <p id="quiz-feedback-text"></p>
+                    </div>
+                </div>
+
+                <div class="quiz-progress">
+                    <div id="progress-bar" class="progress-bar"></div>
+                </div>
+
+                <div id="quiz-results" class="results-box hidden">
+                    <h3>🎉 Quiz Complete!</h3>
+                    <p class="final-score">You scored: <span id="final-score"></span> out of 5</p>
+                    <p id="final-message"></p>
+                    <button class="btn-primary" onclick="restartQuiz()">Try Again</button>
+                </div>
+
+                <button class="btn-secondary" onclick="nextQuestion()" id="next-question-btn">Next Question →</button>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>💻 IF Statements Interactive Learning | Klasse 8 | Informatik & Englisch</p>
+            <p>Made with ❤️ for learning!</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
