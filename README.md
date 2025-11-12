@@ -1,27 +1,32 @@
-# IF Statements 1 - Unterrichtsmaterialien
-## Klasse 8 Realschule | Fächerübergreifend: Informatik & Englisch
+# Conditionals 1 (First Conditional) - Unterrichtsmaterialien
+## Klasse 8 Realschule | Englisch-Grammatikwiederholung mit informatischem Bezug
 
 ---
 
 ## 📚 Übersicht
 
-Dieses Repository enthält alle Materialien für eine 45-minütige Unterrichtsstunde zur Einführung von **IF Statements** in der Programmierung. Die Stunde verbindet Informatik und Englisch und ist nach dem **5-Phasen-Modell nach Ziegesar** aufgebaut.
+Dieses Repository enthält alle Materialien für eine 45-minütige **Englisch-Grammatikstunde** zu **Conditionals 1 (First Conditional)**. Die Stunde nutzt Programmier-Logik als kreatives Werkzeug zur Visualisierung der Grammatikstruktur und ist nach dem **5-Phasen-Modell nach Ziegesar** aufgebaut.
+
+**🎯 HAUPTFOKUS:** Conditionals 1 (If + present simple, ... will + infinitive)
+**💻 NEBENFOKUS:** IF statements in der Programmierung als Anwendungsbeispiel
 
 ---
 
 ## 📂 Inhalt des Repositories
 
 ### Hauptdokument
-- **`Unterrichtsentwurf.md`** - Kompletter Unterrichtsentwurf mit allen 5 Phasen, Zeitangaben und didaktischen Hinweisen
+- **`Unterrichtsentwurf.md`** ⭐ - Kompletter Unterrichtsentwurf mit allen 5 Phasen, Grammatik-Fokus und didaktischen Hinweisen
 
-### Präsentationsmaterialien
-- **`presentation_slides.md`** - 16 Präsentationsfolien für den Unterricht
+### Arbeitsblätter für Schüler:innen (GRAMMATIK-FOKUS)
+- **`conditional_builder_worksheet.md`** ⭐ - Phase 3: Conditionals bilden, korrigieren, analysieren
+- **`my_conditionals_worksheet.md`** ⭐ - Phase 4: Eigene Conditionals schreiben (mit Code-Transfer)
+- **`code_detective_worksheet.md`** - Optional: Fokus auf Code-Analyse
+- **`practice_worksheet.md`** - Optional: Mehr Programmier-Fokus
+- **`template_for_support.md`** - Differenzierung: Hilfestellung für leistungsschwächere SuS
+
+### Präsentationsmaterialien (OPTIONAL)
+- **`presentation_slides.md`** - 16 Präsentationsfolien (eher Code-fokussiert)
 - **`live_coding_examples.py`** - Python-Beispiele für Live-Coding-Demonstrationen
-
-### Arbeitsblätter für Schüler:innen
-- **`code_detective_worksheet.md`** - Phase 3: Partnerarbeit zum Analysieren von Code
-- **`practice_worksheet.md`** - Phase 4: Eigene IF-Statements schreiben
-- **`template_for_support.md`** - Differenzierung: Vorlage mit Hilfestellung für leistungsschwächere SuS
 
 ### Zusatzmaterialien
 - **`vocabulary_list.md`** - Umfassende Vokabelliste Englisch-Deutsch mit Beispielen und Aussprache
@@ -31,15 +36,16 @@ Dieses Repository enthält alle Materialien für eine 45-minütige Unterrichtsst
 
 ## 🎯 Lernziele
 
-### Fachlich (Informatik):
-- ✅ Verstehen des Konzepts von bedingten Anweisungen
-- ✅ Lesen und Verstehen einfacher IF-Statements
-- ✅ Eigene IF-Statements für Alltagssituationen formulieren
+### ⭐ HAUPTFOKUS - Sprachlich (Englisch):
+- ✅ **Bildung** von Conditionals 1 (If + present simple, ... will + infinitive)
+- ✅ **Verwendung** von Conditionals 1 (real possibilities, predictions, warnings)
+- ✅ **Eigene Conditional sentences** für verschiedene Situationen bilden
+- ✅ **Logische Struktur** von if-clauses erkennen und verstehen
 
-### Sprachlich (Englisch):
-- ✅ IT-Fachvokabular auf Englisch erwerben
-- ✅ Conditional sentences im Programmierkontext verwenden
-- ✅ Einfache Algorithmen auf Englisch beschreiben
+### 💻 NEBENFOKUS - Fachlich (Informatik):
+- ✅ **Parallele** zwischen englischer Grammatik und Programmierlogik erkennen
+- ✅ **Kreative Anwendung** von Conditionals in der Programmierung sehen
+- ✅ **Logisches Denken** in Sprache und Code verstehen
 
 ---
 

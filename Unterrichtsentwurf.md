@@ -1,19 +1,40 @@
-# Unterrichtsentwurf: Introduction to IF Statements
-## Klasse 8, Realschule | 45 Minuten | Fächerübergreifend: Informatik & Englisch
+# Unterrichtsentwurf: Conditionals 1 (First Conditional)
+## Klasse 8, Realschule | 45 Minuten | Englisch-Grammatikwiederholung mit informatischem Bezug
 
 ---
 
 ## Lernziele
 
-### Fachliche Kompetenzen (Informatik):
-- Die SuS verstehen das Konzept von bedingten Anweisungen (if-statements)
-- Die SuS können einfache if-statements lesen und verstehen
-- Die SuS können eigene if-statements für Alltagssituationen formulieren
+### ⭐ HAUPTFOKUS - Sprachliche Kompetenzen (Englisch):
+- Die SuS wiederholen und festigen die **Bildung von Conditionals 1** (If + present simple, ... will + infinitive)
+- Die SuS verstehen die **Verwendung von Conditionals 1** (real possibilities, predictions, warnings, promises)
+- Die SuS können **eigene Conditional sentences** für verschiedene Situationen bilden
+- Die SuS erkennen die **logische Struktur** von if-clauses und deren Bedeutung
 
-### Sprachliche Kompetenzen (Englisch):
-- Die SuS erweitern ihren Wortschatz im Bereich IT/Programmierung
-- Die SuS verstehen und verwenden conditional sentences im Kontext der Programmierung
-- Die SuS können einfache Algorithmen auf Englisch beschreiben
+### 💻 NEBENFOKUS - Fachliche Kompetenzen (Informatik):
+- Die SuS erkennen die **Parallele zwischen englischer Grammatik und Programmierlogik**
+- Die SuS sehen eine **kreative Anwendung** von Conditionals in der Programmierung
+- Die SuS verstehen, dass **logisches Denken** in Sprache und Code ähnlich funktioniert
+
+---
+
+## Grammatik-Fokus: First Conditional (Type 1)
+
+### Form:
+```
+IF + PRESENT SIMPLE, ... WILL + INFINITIVE
+```
+
+**Beispiele:**
+- If it rains, I will take an umbrella.
+- If you study hard, you will pass the exam.
+- If we hurry, we will catch the bus.
+
+### Use:
+- **Real possibilities** in the future
+- **Predictions** based on conditions
+- **Warnings** and consequences
+- **Promises** depending on conditions
 
 ---
 
@@ -21,187 +42,321 @@
 
 ### Phase 1: Einstieg/Warming-up (8 Min.)
 
-**Ziel:** Motivation schaffen, Vorwissen aktivieren, an Alltagserfahrungen anknüpfen
+**Ziel:** Vorwissen zu Conditionals aktivieren, an Alltagserfahrungen anknüpfen
 
-**Aktivität:** "Real-Life Decisions Game"
-- Projektion einer Alltagssituation: "If it rains, I take an umbrella"
-- SuS sammeln weitere if-then Situationen aus ihrem Alltag auf Englisch
-- Lehrkraft sammelt an der Tafel (z.B., "If I'm hungry, I eat something")
-
-**Material:** Präsentationsfolie mit Bildern (Regen/Regenschirm)
+**Aktivität:** "If This, Then That - Real Life"
+1. **Bildimpuls:** Foto von Regen und Regenschirm zeigen
+2. **Frage:** "What will you do if it rains tomorrow?"
+3. **Sammlung:** SuS nennen eigene if-sentences aus ihrem Alltag
+   - "If I'm hungry, I will eat something."
+   - "If it's sunny, I will go outside."
+   - "If I finish my homework, I will play video games."
+4. **Tafelsammlung:** Lehrkraft schreibt Sätze auf (noch ohne Grammatikanalyse)
 
 **Sprachliche Mittel:**
+- If..., I will...
 - If..., then...
-- When..., I...
-- In case of...
+- What will happen if...?
 
-**Überleitung:** "Computers also make decisions! Let's see how..."
+**Material:** Bildkarten mit Situationen (Regen, Sonne, Hausaufgaben, etc.)
+
+**Überleitung:** "Look at these sentences - they all follow the same pattern. Let's discover the rule!"
 
 ---
 
 ### Phase 2: Erarbeitung I - Präsentation (10 Min.)
 
-**Ziel:** Einführung der if-statement Syntax, Verbindung zur Alltagssprache herstellen
+**Ziel:** Grammatikregel erarbeiten (Form + Use), Verbindung zu Code herstellen
 
-**Aktivität:** "From English to Code"
-1. Zeige Alltagssatz: "If I'm hungry, I eat pizza"
-2. Übersetze in Pseudocode:
+**Aktivität:** "Grammar Detective + Code Connection"
+
+**Teil A: Grammar Rule (6 Min.)**
+1. **Analyse der gesammelten Sätze:**
+   - Lehrkraft unterstreicht If-clause in einer Farbe, main clause in anderer
+   - "If it rains, I will take an umbrella"
+   - SuS erkennen das Muster
+
+2. **Regel an der Tafel entwickeln:**
    ```
-   IF hungry
-   THEN eat pizza
+   IF + PRESENT SIMPLE, ... WILL + INFINITIVE
+
+   Example: If it rains, I will take an umbrella.
+            ↓              ↓
+         condition       result/consequence
    ```
-3. Zeige echte Python-Syntax:
+
+3. **Use besprechen:**
+   - When do we use this? → Real possibilities in the future
+   - What does it express? → Predictions, warnings, promises
+
+**Teil B: From Grammar to Code (4 Min.)**
+4. **Verbindung zur Programmierung:**
+   - "Computers think in the same way!"
+   - Englisch: "If it rains, I will take an umbrella"
+   - Code:
    ```python
-   if hungry:
-       eat_pizza()
+   if it_rains:
+       take_umbrella()
+   ```
+   - "Same logic, different language!"
+
+5. **Parallel zeigen:**
+   ```
+   ENGLISH:  If temperature is above 20°C, it will be warm.
+   CODE:     if temperature > 20:
+                 print("It will be warm!")
    ```
 
-**Live-Coding Beispiel:**
-```python
-age = 14
-if age >= 13:
-    print("You are a teenager!")
-```
+**Material:**
+- Tafel/Whiteboard für Grammatikregel
+- Beamer für Code-Beispiele
 
-**Wichtige Begriffe einführen:**
-- **condition** (Bedingung): the part that is checked
-- **boolean** (wahr/falsch): True or False
-- **code block** (Codeblock): what happens if condition is true
-- **indentation** (Einrückung): spaces before the code
-
-**Material:** Beamer für Live-Coding, Python IDLE oder repl.it
+**Wichtig:** Code ist nur Visualisierung der Grammatiklogik!
 
 ---
 
 ### Phase 3: Semantisierung/Erarbeitung II (8 Min.)
 
-**Ziel:** Verständnissicherung durch Analyse und Erklärung
+**Ziel:** Grammatik festigen durch Analyse und Anwendung
 
-**Aktivität:** "Code Detective"
-- SuS erhalten Arbeitsblatt mit 4-5 verschiedenen if-statements
-- In Partnerarbeit: SuS lesen Code und erklären sich gegenseitig auf Englisch, was passiert
-- Plenum: Ausgewählte Paare präsentieren ihre Ergebnisse
+**Aktivität:** "Sentence Builder - English & Code"
 
-**Beispiel-Codes:**
-```python
-temperature = 25
-if temperature > 20:
-    print("It's warm!")
-```
+**In Partnerarbeit (6 Min.):**
+1. **Arbeitsblatt mit gemischten Aufgaben:**
 
-```python
-score = 85
-if score >= 50:
-    print("You passed the test!")
-```
+   **Part A: Complete the Conditionals**
+   - If it _____ (rain) tomorrow, we _____ (stay) at home.
+   - If you _____ (study) hard, you _____ (pass) the test.
+
+   **Part B: Match English to Code**
+   - English sentence gegeben → passenden Code zuordnen
+   - Code gegeben → passenden English sentence zuordnen
+
+   **Part C: Error Correction**
+   - Falsche Conditionals korrigieren:
+     - "If it will rain, I take an umbrella." ❌
+     - "If it rains, I will take an umbrella." ✓
+
+2. **Plenum (2 Min.):**
+   - Ausgewählte Paare präsentieren Lösungen
+   - Gemeinsame Korrektur
+   - "Why is this correct/incorrect?"
 
 **Leitfragen:**
 - What is the condition?
-- Is it True or False?
-- What happens if it's True?
-- What happens if it's False? (Nothing!)
+- What is the consequence?
+- Which tense do we use in the if-clause? (present simple!)
+- Which form do we use in the main clause? (will + infinitive!)
 
-**Material:** Arbeitsblatt "Code Detective" (siehe code_detective_worksheet.md)
+**Material:** Arbeitsblatt "Conditional Builder" (siehe conditional_builder_worksheet.md)
 
 ---
 
 ### Phase 4: Übung/Practice (12 Min.)
 
-**Ziel:** Selbstständiges Anwenden der if-statements
+**Ziel:** Selbstständiges Bilden von Conditionals mit kreativem Transfer
 
-**Aktivität:** "Write Your Own If-Statement"
-- SuS arbeiten einzeln oder in Paaren am Computer/Tablet
-- Aufgabe: Schreibe 3 eigene if-statements zu verschiedenen Szenarien:
-  1. Check if someone can watch a movie (age rating)
-  2. Check if it's time for lunch (time)
-  3. Check your own creative scenario
+**Aktivität:** "Create Your Own Conditionals - From Sentences to Code"
+
+**Struktur:**
+1. **Schritt 1 (5 Min.):** Schreibe 5 eigene Conditional sentences
+   - Themen vorgegeben:
+     1. Weather (Wetter)
+     2. School (Schule)
+     3. Free time (Freizeit)
+     4. Technology (Technologie)
+     5. Your choice (Eigene Wahl)
+
+   **Beispiel:**
+   - Weather: "If it snows, I will build a snowman."
+   - School: "If I get good grades, my parents will be happy."
+
+2. **Schritt 2 (4 Min.):** Übertrage 2 deiner Sätze in Code-Form
+   - Kreative Visualisierung der Grammatik!
+   - "Same logic, different language"
+
+   **Beispiel:**
+   ```
+   English: If it snows, I will build a snowman.
+
+   Code: if it_snows:
+             build_snowman()
+   ```
+
+3. **Schritt 3 (3 Min.):** Optional - Teste deinen Code im Playground
+   - Website: Playground-Tab
+   - Oder: repl.it / trinket.io
 
 **Differenzierung:**
-- **Unterstützung:** Template mit Lücken vorbereitet
-- **Erweiterung:** "What if the condition is False? Can you add a message?"
+- **Unterstützung:** Sentence starters und Beispiele auf Arbeitsblatt
+- **Erweiterung:** "Can you add a negative condition?" (If it doesn't rain, ...)
 
-**Tool:** Python online editor (repl.it, trinket.io) oder IDLE
+**Tool:**
+- Arbeitsblatt (Papier oder digital)
+- Optional: Python Playground auf der Website
 
-**Material:** Übungsblatt mit Szenarien (siehe practice_worksheet.md)
+**Material:** Übungsblatt "My Conditionals" (siehe my_conditionals_worksheet.md)
 
 ---
 
 ### Phase 5: Transfer/Evaluation (7 Min.)
 
-**Ziel:** Gelerntes in neuen Kontext übertragen, Reflexion
+**Ziel:** Reflexion über Grammatik, Verständniskontrolle
 
-**Aktivität:** "Real-World Applications"
-1. **Gallery Walk (3 Min.):**
-   - SuS hängen ihre Lösungen auf/zeigen am Bildschirm
-   - Andere SuS schauen sich Lösungen an und geben Sticker/Feedback
+**Aktivität:** "Conditionals in Real Life + Quick Quiz"
 
-2. **Reflexion (4 Min.):**
-   - Wo begegnen uns if-statements im echten Leben?
-     - Ampeln (if car detected, then turn red)
-     - Spiele (if score > 100, then next level)
-     - Apps (if password correct, then login)
+**Teil 1: Real-World Examples (3 Min.)**
+- **Diskussion:** Wo begegnen uns Conditionals?
+  - In everyday life: "If..., then..." thinking
+  - In technology: Apps, games, websites (all use this logic!)
+  - In decisions: "If I do this, this will happen"
 
-   - Quick Exit Ticket: "One thing I learned today..."
+- **Beispiele sammeln:**
+  - Traffic lights: "If a car is detected, the light will turn red"
+  - Video games: "If you collect 100 coins, you will get an extra life"
+  - Smartphones: "If the battery is low, the phone will show a warning"
+
+**Teil 2: Exit Quiz (4 Min.)**
+- **Quick Grammar Check** (3 Fragen, Think-Pair-Share):
+
+  1. Complete: "If it _____ (be) sunny tomorrow, we _____ (go) to the beach."
+  2. Correct the error: "If I will see him, I tell him."
+  3. Write your own conditional about tomorrow.
+
+- **Exit Ticket:**
+  - "One conditional sentence I will use this week..."
+  - "I learned that conditionals..."
 
 **Hausaufgabe:**
-"Find one example of an if-statement in your daily life and write it in code-style"
+"Write 5 conditional sentences about your next weekend. Use different subjects (I, we, my friend, etc.).
+Then choose 2 and write them in code-style just for fun!"
+
+**Beispiel:**
+```
+1. If the weather is nice, I will go cycling.
+2. If my friend calls me, we will play football.
+
+Code version:
+if weather_is_nice:
+    go_cycling()
+```
 
 ---
 
 ## Benötigte Materialien
 
-1. ✅ Beamer/Projektor für Präsentation
-2. ✅ Computer/Tablets für praktische Übungen
-3. ✅ Python-Umgebung (online oder installiert)
+1. ✅ Bildkarten für Einstieg (Regen, Sonne, etc.)
+2. ✅ Tafel/Whiteboard für Grammatikregel
+3. ✅ Beamer für Code-Beispiele (nur zur Visualisierung!)
 4. ✅ Arbeitsblätter (siehe separate Dateien)
-5. ✅ Tafel/Whiteboard für Sammlung
+5. ✅ Optional: Computer/Tablets für Playground-Phase
+6. ✅ Optional: Interaktive Website als Zusatz
 
 ---
 
 ## Zeitmanagement-Übersicht
 
-| Phase | Zeit | Aktivität |
-|-------|------|-----------|
-| 1. Einstieg | 8 Min. | Real-Life Decisions Game |
-| 2. Erarbeitung I | 10 Min. | From English to Code, Live-Coding |
-| 3. Semantisierung | 8 Min. | Code Detective (Partnerarbeit) |
-| 4. Übung | 12 Min. | Write Your Own If-Statement |
-| 5. Transfer | 7 Min. | Gallery Walk + Reflexion |
-| **GESAMT** | **45 Min.** | |
+| Phase | Zeit | Aktivität | Fokus |
+|-------|------|-----------|-------|
+| 1. Einstieg | 8 Min. | Real-Life If-Sentences sammeln | 🇬🇧 Grammatik aktivieren |
+| 2. Erarbeitung | 10 Min. | Grammar Rule + Code-Verbindung | 🇬🇧 Regel erarbeiten (80%) + 💻 Code (20%) |
+| 3. Semantisierung | 8 Min. | Sentence Builder (Partnerarbeit) | 🇬🇧 Grammatik üben |
+| 4. Übung | 12 Min. | Eigene Conditionals schreiben | 🇬🇧 Produktion (70%) + 💻 Transfer (30%) |
+| 5. Transfer | 7 Min. | Reflexion + Quiz | 🇬🇧 Verständniskontrolle |
+| **GESAMT** | **45 Min.** | | **🇬🇧 70% Grammatik + 💻 30% Code** |
 
 ---
 
 ## Didaktische Hinweise
 
+### Grammatik-Fokus wahren:
+- **Code ist ein Werkzeug**, nicht das Ziel!
+- Code dient zur **Visualisierung der Grammatiklogik**
+- Wenn Zeit knapp wird: **Grammatikübungen gehen vor Code-Übungen**
+- SuS müssen nicht programmieren können - nur die Logik verstehen
+
 ### Sprachförderung:
-- Fachbegriffe werden auf Englisch eingeführt mit deutscher Erklärung in Klammern
-- Sentence starters bereitstellen: "If..., then...", "The condition is...", "This code checks..."
-- Partnerarbeit ermöglicht sprachliche Unterstützung
+- Konsequent auf Englisch unterrichten (wenn möglich)
+- Sentence starters bereitstellen:
+  - "If..., I will..."
+  - "The condition is..."
+  - "The consequence will be..."
+- Fehlerkorrektur fokussiert auf Grammatik (nicht auf Code!)
 
 ### Differenzierung:
-- **Leistungsstarke SuS:** Können else-statements selbst erforschen
-- **Leistungsschwächere SuS:** Erhalten Templates mit Lücken
-- **Sprachliche Unterstützung:** Vokabelliste mit Fachbegriffen
+- **Leistungsstarke SuS:**
+  - Mehr komplexe Conditionals (mit verschiedenen Subjekten)
+  - Transfer zu Code als kreative Herausforderung
+  - Second Conditional kurz vorstellen?
 
-### Medien:
-- Python IDLE (offline) oder repl.it/trinket.io (online)
-- Projektor für Live-Coding
-- Optional: Kahoot-Quiz zur Auflockerung
+- **Leistungsschwächere SuS:**
+  - Sentence templates mit Lücken
+  - Fokus nur auf Grammatik (Code ist optional!)
+  - Visuelle Unterstützung mit Bildern
+
+### Code richtig einsetzen:
+- Code zeigt: "Diese Grammatiklogik ist universell!"
+- Code motiviert: "Englisch lernen ist praktisch!"
+- Code verbindet: "Sprache und Technik denken gleich!"
+- ABER: Code ersetzt nicht die Grammatikübung!
 
 ---
 
 ## Evaluation/Lernerfolgskontrolle
 
-- Beobachtung während der Partnerarbeit (Phase 3)
-- Überprüfung der praktischen Übungen (Phase 4)
-- Exit Ticket (Phase 5)
-- Hausaufgabe als formative Bewertung
+### Formativ (während der Stunde):
+- Beobachtung: Können SuS Conditionals korrekt bilden?
+- Partnerarbeit: Korrigieren sie sich gegenseitig?
+- Exit Quiz: Verstehen sie Form und Use?
+
+### Summativ (für später):
+- Hausaufgabe kontrollieren
+- Grammar Test in Folgestunde?
+- Speaking Test: SuS formulieren Conditionals mündlich
+
+### Erfolgskriterien:
+Ein/e SuS ist erfolgreich, wenn er/sie:
+- ✅ Die Form "If + present simple, will + infinitive" kennt
+- ✅ Eigene Conditional sentences bilden kann
+- ✅ Den Unterschied zwischen Bedingung und Konsequenz erkennt
+- ✅ Versteht, wann man Conditionals 1 verwendet
+- ✅ (Bonus) Die Parallele zur Programmierung erkennt
 
 ---
 
 ## Ausblick auf Folgestunden
 
-- **Stunde 2:** else-statements (Was passiert, wenn die Bedingung falsch ist?)
-- **Stunde 3:** elif-statements (Mehrere Bedingungen)
-- **Stunde 4:** Verschachtelte if-statements
-- **Stunde 5:** Mini-Projekt (z.B. Quiz-Game oder Decision Tree)
+### Englisch-Stunden:
+- **Stunde 2:** Conditionals 1 vertiefen (negative forms, questions)
+- **Stunde 3:** Conditionals 2 (unreal possibilities)
+- **Stunde 4:** Mixed Conditionals practice
+- **Stunde 5:** Creative writing mit Conditionals
+
+### Optional - Informatik-Stunden:
+- IF statements vertiefen (else, elif)
+- Kleines Projekt: Quiz-Game programmieren
+- Bedingungen in verschiedenen Kontexten
+
+---
+
+## Reflection für die Lehrkraft
+
+### Nach der Stunde fragen:
+- Haben die SuS den grammatischen Unterschied verstanden? (present simple vs. will)
+- War die Code-Verbindung hilfreich oder verwirrend?
+- Haben schwächere SuS genug Unterstützung bekommen?
+- War das Zeitmanagement realistisch?
+- Welche Übungen haben besonders gut funktioniert?
+
+### Anpassungen für nächstes Mal:
+- Mehr/weniger Zeit für Grammatik-Erarbeitung?
+- Code-Teil weglassen wenn zu komplex?
+- Mehr visuelle Unterstützung?
+- Andere Beispiele verwenden?
+
+---
+
+## 🎯 Merke:
+**Diese Stunde ist eine ENGLISCH-Grammatikstunde mit kreativem informatischem Bezug!**
+**Priorität: Conditionals 1 verstehen und anwenden können**
+**Code = Bonus zur Motivation und Visualisierung**
